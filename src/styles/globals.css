@@ -1,0 +1,119 @@
+@tailwind base;
+@tailwind components;
+@tailwind utilities;
+
+@layer base {
+  body {
+    @apply bg-slate-50 dark:bg-[#0b0f19] text-slate-900 dark:text-slate-100 antialiased selection:bg-blue-600 selection:text-white min-h-screen font-sans transition-colors duration-200;
+    font-feature-settings: "cv02", "cv03", "cv04", "cv11";
+  }
+}
+
+/* Professional Engineering Grid Background */
+.bg-dot-grid-light {
+  background-image: radial-gradient(rgba(148, 163, 184, 0.25) 1px, transparent 1px);
+  background-size: 24px 24px;
+}
+
+.dark .bg-dot-grid {
+  background-image: radial-gradient(rgba(255, 255, 255, 0.05) 1px, transparent 1px);
+  background-size: 24px 24px;
+}
+
+/* Enterprise Professional Card Design */
+.card-clean {
+  @apply bg-white dark:bg-[#111827]/75 border border-slate-200 dark:border-slate-800/80 rounded-xl shadow-[0_1px_3px_rgba(0,0,0,0.05)] dark:shadow-[0_4px_20px_-2px_rgba(0,0,0,0.5)] backdrop-blur-sm transition-all duration-200;
+}
+
+.card-clean-hover {
+  @apply bg-white dark:bg-[#111827]/75 border border-slate-200 dark:border-slate-800/80 rounded-xl shadow-[0_1px_3px_rgba(0,0,0,0.05)] dark:shadow-[0_4px_20px_-2px_rgba(0,0,0,0.5)] hover:border-slate-300 dark:hover:border-slate-700 hover:shadow-md dark:hover:shadow-[0_8px_24px_rgba(0,0,0,0.6)] backdrop-blur-sm transition-all duration-200;
+}
+
+.dropdown-clean {
+  @apply bg-white dark:bg-[#111827] border border-slate-200 dark:border-slate-800 rounded-xl shadow-lg dark:shadow-[0_12px_36px_rgba(0,0,0,0.7)] backdrop-blur-md;
+}
+
+/* Clean Data Badges */
+.badge-clean {
+  @apply px-2.5 py-0.5 rounded-md text-[11px] font-semibold tracking-wide border inline-flex items-center gap-1.5;
+}
+
+.badge-blue {
+  @apply px-2.5 py-0.5 rounded-md text-[11px] font-semibold tracking-wide border border-blue-200 bg-blue-50 text-blue-700 dark:border-blue-900/60 dark:bg-blue-950/40 dark:text-blue-300 inline-flex items-center gap-1.5;
+}
+
+.badge-emerald {
+  @apply px-2.5 py-0.5 rounded-md text-[11px] font-semibold tracking-wide border border-emerald-200 bg-emerald-50 text-emerald-700 dark:border-emerald-900/60 dark:bg-emerald-950/40 dark:text-emerald-300 inline-flex items-center gap-1.5;
+}
+
+.badge-amber {
+  @apply px-2.5 py-0.5 rounded-md text-[11px] font-semibold tracking-wide border border-amber-200 bg-amber-50 text-amber-700 dark:border-amber-900/60 dark:bg-amber-950/40 dark:text-amber-300 inline-flex items-center gap-1.5;
+}
+
+.badge-rose {
+  @apply px-2.5 py-0.5 rounded-md text-[11px] font-semibold tracking-wide border border-rose-200 bg-rose-50 text-rose-700 dark:border-rose-900/60 dark:bg-rose-950/40 dark:text-rose-300 inline-flex items-center gap-1.5;
+}
+
+/* Smooth Minimal Scrollbar */
+::-webkit-scrollbar {
+  width: 6px;
+  height: 6px;
+}
+::-webkit-scrollbar-track {
+  background: transparent;
+}
+::-webkit-scrollbar-thumb {
+  background: #cbd5e1;
+  border-radius: 9999px;
+}
+.dark ::-webkit-scrollbar-thumb {
+  background: #1e293b;
+  border-radius: 9999px;
+}
+::-webkit-scrollbar-thumb:hover {
+  background: #94a3b8;
+}
+.dark ::-webkit-scrollbar-thumb:hover {
+  background: #334155;
+}
+
+/* Leaflet Map Custom Professional Styling */
+.leaflet-container {
+  width: 100%;
+  height: 100%;
+  font-family: inherit;
+  background-color: #f1f5f9 !important;
+}
+
+.dark .leaflet-container {
+  background-color: #0b0f19 !important;
+}
+
+.leaflet-popup-content-wrapper {
+  background: #ffffff !important;
+  color: #0f172a !important;
+  border-radius: 10px !important;
+  border: 1px solid #e2e8f0 !important;
+  box-shadow: 0 10px 25px -5px rgba(0, 0, 0, 0.1), 0 8px 10px -6px rgba(0, 0, 0, 0.05) !important;
+  padding: 4px !important;
+}
+
+.dark .leaflet-popup-content-wrapper {
+  background: #111827 !important;
+  color: #f1f5f9 !important;
+  border: 1px solid #1f2937 !important;
+  box-shadow: 0 14px 30px -4px rgba(0, 0, 0, 0.6) !important;
+}
+
+.leaflet-popup-tip {
+  background: #ffffff !important;
+}
+
+.dark .leaflet-popup-tip {
+  background: #111827 !important;
+}
+
+.custom-div-icon {
+  background: transparent;
+  border: none;
+}

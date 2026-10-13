@@ -1,0 +1,67 @@
+import { NewsSignal } from '@/types/news';
+
+export const DEMO_NEWS_SIGNALS: NewsSignal[] = [
+  {
+    id: 'news-01',
+    headline: 'Heavy rainfall affects parts of Pune; localized traffic slowdowns reported',
+    sourceName: 'Sakal Media',
+    sourceUrl: 'https://www.esakal.com',
+    time: '11:20 AM',
+    location: 'Pune (Shivajinagar & Kothrud)',
+    relatedIncidentType: 'heavy_rain',
+    crossSignalStatus: {
+      weatherSignal: true,
+      communitySignal: true,
+      radarSignal: true,
+      statusText: 'Multiple independent signals currently support this event.',
+      trustRating: 'high',
+    },
+  },
+  {
+    id: 'news-02',
+    headline: 'Uprooted tree branch halts IT commuter flow along Baner-Balewadi road',
+    sourceName: 'Pune Mirror',
+    sourceUrl: 'https://punemirror.com',
+    time: '11:35 AM',
+    location: 'Baner Road, Pune',
+    relatedIncidentType: 'fallen_tree',
+    crossSignalStatus: {
+      weatherSignal: true,
+      communitySignal: true,
+      radarSignal: false,
+      statusText: 'Corroborated by 6 verified citizen reports & visual photo proof.',
+      trustRating: 'high',
+    },
+  },
+  {
+    id: 'news-03',
+    headline: 'Shivajinagar subway experiences brief waterlogging after sharp convective burst',
+    sourceName: 'Lokmat Times',
+    sourceUrl: 'https://www.lokmat.com',
+    time: '11:42 AM',
+    location: 'Shivajinagar, Pune',
+    relatedIncidentType: 'waterlogging',
+    crossSignalStatus: {
+      weatherSignal: true,
+      communitySignal: true,
+      radarSignal: true,
+      statusText: 'Confirmed by IMD automated rain gauge (18mm/hr) & traffic police signal.',
+      trustRating: 'high',
+    },
+  },
+  {
+    id: 'news-04',
+    headline: 'IMD warns of gusty squalls (35-45 kmph) and convective thunderstorm cells across Western Ghats',
+    sourceName: 'Indian Express',
+    sourceUrl: 'https://indianexpress.com',
+    time: '10:05 AM',
+    location: 'Pune District Ghats',
+    crossSignalStatus: {
+      weatherSignal: true,
+      communitySignal: false,
+      radarSignal: true,
+      statusText: 'Official IMD Meteorological Bulletin #31',
+      trustRating: 'high',
+    },
+  },
+];
